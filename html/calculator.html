@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>電卓</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script type="text/javascript" src="../js/calculator.js" charset="UTF-8" defer></script>
+        <script type="text/javascript" src="../js/calculatorEqual.js" charset="UTF-8" defer></script>
+        <script type="text/javascript" src="../js/reverse+-.js" charset="UTF-8" defer></script>
+        <script type="text/javascript" src="../js/calculatorDelete.js" charset="UTF-8" defer></script>
+    </head>
+    <body>
+        <div class="layout">
+            <p><span id="memoryNum"></span></p>
+            <p id="displayFormula">0</p>     
+                <button onclick="display_operator('%')">%</button>
+                <button onclick="clearFormula()">CE</button>
+                <button onclick="deleteLastChar()">×</button>
+                <button onclick="display_operator('÷')">÷</button>
+            </br>
+                <button onclick="display_num(7)">7</button>
+                <button onclick="display_num(8)">8</button>
+                <button onclick="display_num(9)">9</button>
+                <button onclick="display_operator('*')">*</button>
+            </br>
+                <button onclick="display_num(4)">4</button>
+                <button onclick="display_num(5)">5</button>
+                <button onclick="display_num(6)">6</button>
+                <button onclick="display_operator('-')">-</button>
+            </br>
+                <button onclick="display_num(1)">1</button>
+                <button onclick="display_num(2)">2</button>
+                <button onclick="display_num(3)">3</button>
+                <button onclick="display_operator('+')">+</button>
+            </br>
+                <button onclick="reverseFormula()">+/-</button>
+                <button onclick="display_num(0)">0</button>
+                <button onclick="display_point('.')">.</button>
+                <button onclick="AnswerToEqual('=')">=</button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.layout{
+    max-width: 1500px;
+    height: auto;
+    margin: 0px;
+    font-size: 0; /*ボタンどうしの横のすき間をなくすため設定。*/   
+}
+
+#memoryNum{
+    /*上部に表示する式*/
+    margin-right: 1px; /*1文字分の空白を用意。ボタンや計算式の表示位置を固定するため。*/   
+    font-size: 20px;
+    color:gray;
+}
+
+#displayFormula{
+    /*計算式*/
+    font-size: 50px;
+}
+
+button{
+    /*ボタン*/
+    width: 25%; /*横幅。「100% / ボタンの列数」% */
+    height: 20%;/*縦幅*/ 
+    background-color: rgb(235, 185, 255); /*背景色*/
+    font-size: large;
+}
+
+/*ボタンを押したらへこむ感じを再現*/
+button:active{
+    transform: translateY(2.5px); /*下にボタンを移動させる*/ 
+}
